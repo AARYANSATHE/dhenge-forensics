@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies | Dhenge Forensic Consultancy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header { padding: 100px 0 50px; background-color: var(--accent-color); text-align: center; }
+        .filter-nav { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 40px; }
+        .filter-btn { padding: 8px 20px; background: transparent; border: 1px solid var(--secondary-color); color: var(--secondary-color); cursor: pointer; border-radius: 20px; transition: var(--transition); }
+        .filter-btn.active, .filter-btn:hover { background: var(--secondary-color); color: var(--primary-color); }
+        .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .case-card { background: var(--accent-color); border-radius: 8px; overflow: hidden; border: 1px solid rgba(197, 160, 89, 0.1); transition: var(--transition); }
+        .case-card:hover { border-color: var(--secondary-color); transform: translateY(-5px); }
+        .case-img { height: 200px; background-size: cover; background-position: center; }
+        .case-info { padding: 25px; }
+        .case-tag { display: inline-block; padding: 4px 12px; background: rgba(197, 160, 89, 0.1); color: var(--secondary-color); border-radius: 4px; font-size: 0.8rem; margin-bottom: 15px; }
+        .case-info h3 { margin-bottom: 10px; }
+        .case-info p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
+        @media (max-width: 768px) { .case-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">DHENGE FORENSICS</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="cases.html">Cases</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="cases.html">Cases</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 style="font-size: 3rem; color: var(--secondary-color);">Case Studies</h1>
+            <p style="color: var(--text-muted);">Real-world examples of our scientific expertise in action.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="filter-nav">
+                <button class="filter-btn active" data-filter="all">All Disciplines</button>
+                <button class="filter-btn" data-filter="document">Document</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+                <button class="filter-btn" data-filter="ballistics">Ballistics</button>
+            </div>
+
+            <div class="case-grid">
+                <div class="case-card reveal" data-category="document">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-info">
+                        <span class="case-tag">Document Examination</span>
+                        <h3>The Sovereign Will Dispute</h3>
+                        <p>Our team authenticated a contested 50-year-old will through meticulous ink dating and handwriting analysis, resolving a $10M estate battle.</p>
+                        <a href="#" style="color: var(--secondary-color);">View Details →</a>
+                    </div>
+                </div>
+
+                <div class="case-card reveal" data-category="digital">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-info">
+                        <span class="case-tag">Digital Forensics</span>
+                        <h3>Corporate Espionage Leak</h3>
+                        <p>Identified the source of a massive data breach within a Fortune 500 company by tracing encrypted file fragments back to a remote server.</p>
+                        <a href="#" style="color: var(--secondary-color);">View Details →</a>
+                    </div>
+                </div>
+
+                <div class="case-card reveal" data-category="ballistics">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-info">
+                        <span class="case-tag">Ballistics</span>
+                        <h3>The Midtown Incident</h3>
+                        <p>Reconstructed a complex shooting scene using 3D trajectory mapping, providing critical evidence that exonerated a wrongfully accused individual.</p>
+                        <a href="#" style="color: var(--secondary-color);">View Details →</a>
+                    </div>
+                </div>
+
+                <div class="case-card reveal" data-category="digital">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-info">
+                        <span class="case-tag">Digital Forensics</span>
+                        <h3>Cryptocurrency Recovery</h3>
+                        <p>Successfully recovered lost private keys for a high-profile client, restoring access to over 500 BTC lost due to hardware failure.</p>
+                        <a href="#" style="color: var(--secondary-color);">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="logo">DHENGE FORENSICS</h4>
+                    <p style="color: var(--text-muted);">Professional forensic consultancy providing expert analysis and scientific truth since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="cases.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul style="color: var(--text-muted);">
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 10px;"></i> 123 Forensic Plaza, Science City</li>
+                        <li><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 10px;"></i> info@dhengeforensics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhenge Forensic Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Dhenge Forensic Consultancy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: 100px 0 50px;
+            background-color: var(--accent-color);
+            text-align: center;
+        }
+
+        .tabs-container {
+            margin-top: 50px;
+        }
+
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background: transparent;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .tab-content {
+            display: none;
+            background: var(--accent-color);
+            padding: 40px;
+            border-radius: 8px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .service-info h3 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .turnaround-box {
+            background: var(--primary-color);
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            margin-top: 30px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .tab-content.active { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">DHENGE FORENSICS</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="cases.html">Cases</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="cases.html">Cases</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 style="font-size: 3rem; color: var(--secondary-color);">Our Expertise</h1>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 20px auto 0;">Comprehensive forensic solutions across multiple scientific disciplines, delivered with precision and integrity.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="document">Document Examination</button>
+                    <button class="tab-btn" data-tab="digital">Digital Forensics</button>
+                    <button class="tab-btn" data-tab="fingerprint">Fingerprint Analysis</button>
+                    <button class="tab-btn" data-tab="ballistics">Ballistics</button>
+                    <button class="tab-btn" data-tab="toxicology">Toxicology</button>
+                </div>
+
+                <div id="document" class="tab-content active">
+                    <div class="service-info">
+                        <h3>Questioned Document Examination</h3>
+                        <p>Our experts utilize state-of-the-art microscopic and spectral analysis to authenticate documents, identify forgeries, and analyze handwriting patterns.</p>
+                        <ul style="margin-top: 20px; color: var(--text-muted);">
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Handwriting & Signature Verification</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Alteration & Erasure Detection</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Ink & Paper Analysis</li>
+                        </ul>
+                        <div class="turnaround-box">
+                            <strong>Standard Turnaround:</strong> 5-7 Business Days
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80" alt="Document Examination" style="border-radius: 8px;">
+                    </div>
+                </div>
+
+                <div id="digital" class="tab-content">
+                    <div class="service-info">
+                        <h3>Digital & Cyber Forensics</h3>
+                        <p>We provide comprehensive digital investigations, from data recovery to cybercrime analysis, ensuring all evidence is legally admissible.</p>
+                        <ul style="margin-top: 20px; color: var(--text-muted);">
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Mobile Device Forensics</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Cloud Data Recovery</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Incident Response</li>
+                        </ul>
+                        <div class="turnaround-box">
+                            <strong>Standard Turnaround:</strong> 7-10 Business Days
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Digital Forensics" style="border-radius: 8px;">
+                    </div>
+                </div>
+
+                <div id="fingerprint" class="tab-content">
+                    <div class="service-info">
+                        <h3>Fingerprint Analysis</h3>
+                        <p>Using advanced chemical and laser techniques, we develop and compare latent prints to provide definitive identifications.</p>
+                        <ul style="margin-top: 20px; color: var(--text-muted);">
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Latent Print Development</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> AFIS Database Comparison</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Crime Scene Processing</li>
+                        </ul>
+                        <div class="turnaround-box">
+                            <strong>Standard Turnaround:</strong> 3-5 Business Days
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&w=600&q=80" alt="Fingerprint Analysis" style="border-radius: 8px;">
+                    </div>
+                </div>
+
+                <div id="ballistics" class="tab-content">
+                    <div class="service-info">
+                        <h3>Firearms & Ballistics</h3>
+                        <p>Expert analysis of firearms, ammunition, and trajectory to reconstruct shooting incidents with scientific precision.</p>
+                        <ul style="margin-top: 20px; color: var(--text-muted);">
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Toolmark Identification</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Trajectory Reconstruction</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> GSR Analysis</li>
+                        </ul>
+                        <div class="turnaround-box">
+                            <strong>Standard Turnaround:</strong> 10-14 Business Days
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=600&q=80" alt="Ballistics" style="border-radius: 8px;">
+                    </div>
+                </div>
+
+                <div id="toxicology" class="tab-content">
+                    <div class="service-info">
+                        <h3>Forensic Toxicology</h3>
+                        <p>Detailed chemical analysis of biological samples to detect the presence of drugs, alcohol, or poisons.</p>
+                        <ul style="margin-top: 20px; color: var(--text-muted);">
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Post-mortem Toxicology</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Workplace Drug Testing</li>
+                            <li><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i> DUI Investigations</li>
+                        </ul>
+                        <div class="turnaround-box">
+                            <strong>Standard Turnaround:</strong> 14-21 Business Days
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1579154273821-7822bd917ccb?auto=format&fit=crop&w=600&q=80" alt="Toxicology" style="border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="logo">DHENGE FORENSICS</h4>
+                    <p style="color: var(--text-muted);">Professional forensic consultancy providing expert analysis and scientific truth since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="cases.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul style="color: var(--text-muted);">
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 10px;"></i> 123 Forensic Plaza, Science City</li>
+                        <li><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 10px;"></i> info@dhengeforensics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhenge Forensic Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

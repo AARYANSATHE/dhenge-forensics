@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhenge Forensic Consultancy | Professional Forensic Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Homepage Specific Styles */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        .services-preview {
+            background-color: var(--accent-color);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: var(--primary-color);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary-color);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">DHENGE FORENSICS</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="cases.html">Cases</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="cases.html">Cases</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content reveal">
+                <h1>Uncovering Truth Through Science</h1>
+                <p>Expert forensic consultancy providing reliable analysis, expert testimony, and comprehensive investigations across multiple disciplines.</p>
+                <div class="hero-btns">
+                    <a href="services.html" class="btn btn-primary">Our Services</a>
+                    <a href="contact.html" class="btn btn-outline">Request Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding reveal">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Cases Solved</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Expert Witnesses</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-preview section-padding">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+                    <h2 style="font-size: 2.5rem; color: var(--secondary-color);">Expertise Disciplines</h2>
+                    <p style="color: var(--text-muted);">Specialized forensic solutions tailored to legal and corporate needs.</p>
+                </div>
+                <div class="service-grid">
+                    <div class="service-card reveal">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>Document Examination</h3>
+                        <p>Handwriting analysis, forgery detection, and document authentication using advanced scientific methods.</p>
+                        <a href="services.html" style="color: var(--secondary-color); margin-top: 15px; display: inline-block;">Learn More →</a>
+                    </div>
+                    <div class="service-card reveal">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Digital Forensics</h3>
+                        <p>Data recovery, cybercrime investigation, and mobile device analysis for legal proceedings.</p>
+                        <a href="services.html" style="color: var(--secondary-color); margin-top: 15px; display: inline-block;">Learn More →</a>
+                    </div>
+                    <div class="service-card reveal">
+                        <i class="fas fa-fingerprint"></i>
+                        <h3>Fingerprint Analysis</h3>
+                        <p>Latent print development, comparison, and identification using state-of-the-art technology.</p>
+                        <a href="services.html" style="color: var(--secondary-color); margin-top: 15px; display: inline-block;">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding reveal" style="text-align: center;">
+            <div class="container">
+                <h2 style="margin-bottom: 30px;">Ready to discuss your case?</h2>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="logo">DHENGE FORENSICS</h4>
+                    <p style="color: var(--text-muted);">Professional forensic consultancy providing expert analysis and scientific truth since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="cases.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul style="color: var(--text-muted);">
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 10px;"></i> 123 Forensic Plaza, Science City</li>
+                        <li><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 10px;"></i> info@dhengeforensics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhenge Forensic Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

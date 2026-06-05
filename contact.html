@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dhenge Forensic Consultancy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header { padding: 100px 0 50px; background-color: var(--accent-color); text-align: center; }
+        .contact-container { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; margin-top: 50px; }
+        .contact-info-list { display: flex; flex-direction: column; gap: 30px; }
+        .info-item { display: flex; gap: 20px; align-items: flex-start; }
+        .info-item i { font-size: 1.5rem; color: var(--secondary-color); }
+        .contact-form { background: var(--accent-color); padding: 40px; border-radius: 8px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; color: var(--text-muted); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; background: var(--primary-color); border: 1px solid rgba(197, 160, 89, 0.3); color: var(--text-color); border-radius: 4px; outline: none; }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--secondary-color); }
+        .faq-section { margin-top: 80px; }
+        .faq-item { background: var(--accent-color); margin-bottom: 15px; border-radius: 4px; overflow: hidden; }
+        .faq-question { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
+        .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-muted); }
+        .faq-item.active .faq-answer { padding: 0 20px 20px; max-height: 200px; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        @media (max-width: 768px) { .contact-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">DHENGE FORENSICS</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="cases.html">Cases</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="cases.html">Cases</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 style="font-size: 3rem; color: var(--secondary-color);">Get In Touch</h1>
+            <p style="color: var(--text-muted);">Consult with our experts regarding your forensic needs.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info-list reveal">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Office</h3>
+                            <p style="color: var(--text-muted);">123 Forensic Plaza, Science City, SC 54321</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p style="color: var(--text-muted);">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p style="color: var(--text-muted);">info@dhengeforensics.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p style="color: var(--text-muted);">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Discipline</label>
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="document">Document Examination</option>
+                                <option value="digital">Digital Forensics</option>
+                                <option value="fingerprint">Fingerprint Analysis</option>
+                                <option value="ballistics">Ballistics</option>
+                                <option value="toxicology">Toxicology</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Describe your case briefly..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="faq-section reveal">
+                <h2 style="text-align: center; color: var(--secondary-color); margin-bottom: 40px;">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I submit evidence for analysis?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Evidence can be submitted in person at our secure facility or via registered courier. Please contact us first to receive a submission form and chain-of-custody instructions.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are your experts available for court testimony?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, all our lead experts are experienced in providing scientific testimony in both civil and criminal courts.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is your typical turnaround time?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Turnaround times vary by discipline. Document examination typically takes 5-7 days, while complex digital forensics or toxicology may take up to 21 days.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="logo">DHENGE FORENSICS</h4>
+                    <p style="color: var(--text-muted);">Professional forensic consultancy providing expert analysis and scientific truth since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="cases.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul style="color: var(--text-muted);">
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 10px;"></i> 123 Forensic Plaza, Science City</li>
+                        <li><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 10px;"></i> info@dhengeforensics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhenge Forensic Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
